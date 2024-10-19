@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>练习页面</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      p{
+        color:rgba(25, 25, 205, 0.808);
+        font-size:30px;
+      }
+      .highlight{
+      background-color:yellow
+      }
+      #idchooser{
+        font-size: 50px;
+      }
+      *{
+        font-family:cursive ;
+      }
+      .father > .son{
+        color:chocolate;
+        font-weight: 1000;
+      }
+      .father p{
+        color:aquamarine;
+        font-size: larger;
+      }
+      h3+p{
+        background-color: crimson;
+      }
+      #fakeclass:hover{
+        background-color:darkorange;
+      }
+      #xuanfubianse{
+        color:black
+      }
+      #xuanfubianse:hover{
+        color:violet;
+      }
+    </style>
+    <link rel="stylesheet" href=".\css\style.css">
+    }
+</head>  
+<body>
+    <h1>一级标题</h1>
+    <h2 style="color: black;">二级标题<b>加粗</b><i>斜体</i><u>下划线</u><s>删除线</s></h2>
+    <p>内部样式表</p>
+    <p style="color:red;font-size: 50px;">内联样式</p>
+    <h2>外部样式</h2>
+    <a href="https://chatgpt.com/" target="_blank" style="text-decoration: none; color:inherit">ChatGPT</a>
+    <br>
+    <img src="https://th.bing.com/th/id/OIP.yUDzS5eAuo4gHZRlmp10CAHaE7?rs=1&pid=ImgDetMain" width="300" height="200" alt="改图片加载失败">
+    <ul>
+    <li>无序列</li>
+    </ul>
+    <ol>
+      <li>有序列表</li>
+    </ol>
+    <table border="5">
+    <tr>
+      <th>第一行</th>
+      <th>第二行</th>
+      <th>第三行</th>
+    </tr>
+    <tr>
+      <td>元素1</td>
+      <td>元素2</td>
+      <td>元素3</td>
+    </tr>
+  </table>
+  <form>
+    <label for="username">用户名:</label>
+    <input type="text" id="username" placeholder="请输入用户名">
+    <br>
+    <label for="password">密 码:</label>
+    <input type="password" id="password" placeholder="请输入密码">
+    <br>
+    <input type="submit" value="登录">
+    <hr>
+    <label for="">是否记住密码</label>
+    <input type="radio" name="tell"> 是
+    <input type="radio" name="tell"> 否
+    <br>
+    <lable>同意协议1</lable>
+    <input type="checkbox" name="initiative">
+    <lable>同意协议2</lable>
+    <input type="checkbox" name="initiative">
+  </form>
+  <h6 style="font-size: xxx-large;";">不同类型的元素选择器</h6>
+  <h3 class="highlight">这是一个类选择器</h3>
+  <h4 id="idchooser">id选择器</h4>
+  <div class="father">
+    <p class="son">这是一个子元素选择器</p>
+    <div>
+      <p class="grandson">这是以一个后代选择器</p>
+    </div>
+  </div>
+  <p>这是一个普通的p标签</p>
+  <h3>这是一个相邻兄弟选择器</h3>
+  <p>这是另一个p标签</p>
+  <h4 id="fakeclass" style="font-size: larger;">这是一个伪类选择器示例</h4>
+  <p id="xuanfubianse">悬浮变色</p>
+  </body>
+</html>
