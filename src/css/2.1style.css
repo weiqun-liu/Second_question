@@ -9,7 +9,7 @@
 #list_block
 {
 	background-color: rgba(255, 255, 255, 0.5);
-	width: 29.6%;
+	width: 29.58%;
 	height: 44.2em;
 	border-radius: 5px;
 	position: fixed;
@@ -17,11 +17,11 @@
 	top:74px;
 	right:5px
 }
-#video_list
+#filelist
 {
-	list-style-type: none;
+	list-style-type:decimal;
 	position: relative;
-    margin-left: -20px;
+    margin-left: -5px;
 	font-size: x-large;
 	font-family: songti;
 
@@ -39,4 +39,8 @@ video {
 	border-radius: 5px;
 	position: absolute;
     margin-left: -8px;
+}
+a {
+	text-decoration: none;
+	color:cyan;
 }
