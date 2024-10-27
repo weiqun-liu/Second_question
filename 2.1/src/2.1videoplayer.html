@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2.1视频播放器</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href=".\css\2.1style.css">
+    <style>
+        body {
+            width: 500pm;
+            width: 300pm;
+            background-size: cover;
+            background-image: url('../res/photo/background.jpg');
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p><!-- 设想弄一个视频标题 -->
+    <input type="file" id="fileinput" accept="video/*"><!-- 选择本地文件 -->
+    <br>
+    <div id="video_player"><!-- 视频播放器 -->
+        <video id="videos" controls>
+            <source src="" type="video/mp4">
+            <p>Your browser does not support the video tag. You can download the video
+        </video><!-- 视频控制 -->
+    </div>
+    <span id="list_block"><!-- 侧边栏 -->
+        <ul id="filelist"><!-- 设想做一个视频播放列表 -->
+            <li><a href="#" onclick="changevideo1()" >视频1</a></li>
+        </ul>
+    </span>
+
+
+    <script src="./js/2.1script.js"></script>
+</body>
+
+</html>
