@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b++站 </title>
+  <link rel="stylesheet" href="./css/home.css"></link>
+</head>
+<body>
+    <!-- 搜索框 -->
+    <div id="searchLine">
+        <input class="searchText" type="text" placeholder="打倒巨龙！！！">
+        <button class="searchBtn" type="button">搜 索</button>
+    </div>
+    <!-- 视频列表 -->
+     <div id="video-list">
+      <div id="videoContainer">
+        <!-- 视频卡片 -->
+        <div class="video-card">
+          <div class="video-cover">
+            <a href="./video.html" target="_blank" onclick="saveVideoPath1()"><img src="../res/photo/cover/cover1.png" id="first-cover" alt="封面加载失败"></a>
+            <span class="time">0:52</span>
+          </div>
+          <div class="video-text" id="first-text"><a href="./video.html" target="_blank" id="first-link" title="这是第一个视频的简介（没错）" onclick="saveVideoPath1()">打倒巨龙！！！</a></div>
+        </div>
+        <div class="video-card">
+          <div class="video-cover">
+            <a href="./video.html" target="_blank" onclick="saveVideoPath2()"><img src="../res/photo/cover/cover2.png" id="second-cover" alt="封面加载失败"></a>
+            <span class="time">0:18</span>
+          </div>
+          <div class="video-text" id="second-text"><a href="./video.html" target="_blank" id="second-link" title="这是第二个视频的简介（应该没错）" onclick="saveVideoPath2()">水下漫游</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/home.js"></script>
+</body>
+</html>

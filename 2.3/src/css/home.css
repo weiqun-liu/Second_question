@@ -1,0 +1,86 @@
+:root {
+    --color-text: #000000;
+    --color-vd-bg:#d1d4d73d;
+    --color-shadow: #cf4141;
+    --color-light:#ffc0cb ;
+    --color-boder:#fca9b7;
+    --color-vc-bg: #00000049;
+    --color-ca-bg: #f7f1f1a1;
+    --color-st-bg:#dae0e783;
+}
+img {
+    width: 100%;
+    height: 7.5em;
+    border-radius: 6px;
+}
+a {
+    text-decoration: none;
+    color:var(--color-text);
+}
+#searchLine {
+    height: 4em;
+    text-align: center;
+}
+
+.searchText {
+    height: 3em;
+    width: 50em;
+    border-radius: 10px;
+    border-top: #f1f2f3;
+    border-left: #f1f2f3;
+    border-right: #f1f2f3;
+    border-bottom: #f1f2f3;
+    background-color: var(--color-st-bg);
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--color-shadow),
+    -0.1rem -0.1rem 0.1rem var(--color-light);
+}
+
+.searchBtn {
+    height: 2.8em;
+    width: 5em;
+    background-color:var(--color-light);
+    border-color:var(--color-boder);
+    border-radius: 6px;
+    font-size:16px;
+}
+
+#video-list {
+    display: flex;
+    justify-content:center;
+}
+
+#videoContainer {
+    margin-top: 3em;
+    background-color:var(--color-vd-bg);
+    height: 100%;
+    width: 74.6%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    background-color: var(--color-ca-bg);
+    height: 12em;
+    width:15em;
+    border-radius: inherit;
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+.time {
+    background-color: var(--color-vd-bg);
+}
+.videot {
+    background-color: var(--color-st-bg);
+    display: contents;
+}
+
+.video-text {
+    background-color: #c9c3c388;
+    margin-top: 5px;
+    height: 2.5em;
+    width: 100%;
+    border-radius: inherit;
+    font-family: kaiti;
+    font-size: large;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b++站视频页 </title>
+  <link rel="stylesheet" href="./css/video.css">
+  <style>
+    body {
+      width: 500pm;
+      width: 300pm;
+      background-size: cover;
+      background-image: url('../res/photo/background.jpg');
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-line" value=""></div>
+  <div class="video-time">00:00 / 00:00</div>
+  <div class="download">下载</div>
+  <div class="content">
+    <!-- 视频 -->
+    <div class="video-box">
+      <!-- 视频屏幕区域 -->
+      <ul class="video-speed" role="button" aria-label="倍速">倍速
+        <li class="speed" id="s20">2.0x</li>
+        <li class="speed" id="s15">1.5x</li>
+        <li class="speed" id="s10">1.0x</li>
+        <li class="speed" id="s05">0.5x</li>
+      </ul>
+      <div class="video-content">
+        <!-- 视频暂停时显示的图标 -->
+        <span class="pause-icon material-icons-outlined">
+          play_circle_outline
+        </span>
+        <!-- 视频主区域 -->
+        <video class="video-main" src="" alt="视频加载失败"></video>
+
+        <!-- 视频控制区域 -->
+        <div class="video-control">
+          <!-- 进度条 -->
+          <div class="progress-bar-box">
+            <span 
+              class="progress-bar-main"
+              style="width: 0"></span>
+            <span
+              class="progress-bar-load"
+              style="width: 0;"></span>
+          </div>
+          <!-- 按钮 -->
+          <div class="control-btn-box">
+            <span
+              class="play-btn material-icons-outlined">
+              play_circle_outline
+            </span>
+            <span
+              class="full-screen-btn material-icons-outlined">
+              fullscreen
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/video.js"></script>
+</body>
+</html>
