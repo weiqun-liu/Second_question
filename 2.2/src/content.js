@@ -1,5 +1,6 @@
 
 function todarkIndex(){
+    // 个人主页
     document.getElementById("app").removeAttribute('style');
     document.getElementById('page-index').removeAttribute('style');
     document.getElementsByClassName('s-space')[0].removeAttribute('style');
@@ -13,6 +14,7 @@ function todarkIndex(){
 }
 
 function todark(){
+    // 主页和视频页
     document.documentElement.style.setProperty('--Wh0', '#000000');
     document.documentElement.style.setProperty('--text1', '#ffffff');
     document.documentElement.style.setProperty('--graph_bg_thin', '#000000');
@@ -26,7 +28,7 @@ function todark(){
     document.documentElement.style.setProperty('--Ga1', '#3a3a3a');
     document.documentElement.style.setProperty('--bg2_floa','#000000');
     console.log("夜间模式开启成功");
-
+    // 个人主页
     document.getElementById("app").setAttribute('style','background-color:#000000;');
     document.getElementById('page-index').setAttribute('style','color:#ffffff;');
     document.getElementsByClassName('s-space')[0].setAttribute('style','background-color:#000000;');
@@ -40,6 +42,7 @@ function todark(){
 }
 
 function nodark(){
+    // 主页和视频页
     document.documentElement.style.setProperty('--Wh0', '#FFFFFF');
     document.documentElement.style.setProperty('--text1', '#000000');
     document.documentElement.style.setProperty('--graph_bg_thin', '#FFFFFF');
@@ -52,6 +55,7 @@ function nodark(){
     document.documentElement.style.setProperty('--bg3', '#FFFFFF');
     document.documentElement.style.setProperty('--Ga1', '#F1F2F3');
     document.documentElement.style.setProperty('--bg2_floa','#F1F2F3');
+    // 个人主页
     document.getElementById("app").removeAttribute('style');
     document.getElementById('page-index').removeAttribute('style');
     document.getElementsByClassName('s-space')[0].removeAttribute('style');
@@ -71,6 +75,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         const video = document.querySelector('video');
 
         if (video && !isNaN(videospeed) && videospeed > 0) {
+            // 将倍速加到视频里的倍速栏
             let x=document.querySelector('.bpx-player-ctrl-playbackrate-menu')
             x.innerHTML += "<li class='bpx-player-ctrl-playbackrate-menu-item' data-value='"+ videospeed +"'>" + videospeed +"x</li>"
             video.playbackRate = videospeed; // 设置倍速
